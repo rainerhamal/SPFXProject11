@@ -1,0 +1,29 @@
+//! Lsn 5.3.6 Add CSS styles to the application customizer. Start by installing the SPFx version of the Office UI Fabric Core CSS files by executing the following command on the command line: npm install @microsoft/sp-office-ui-fabric-core --save. Create a new file HelloAppCustomizerApplicationCustomizer.module.scss to the ./src/extensions/helloAppCustomizer folder and add the following SCSS code:
+
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.app {
+    .top {
+        height: 60px;
+        text-align: center;
+        line-height: 2.5;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $ms-color-themePrimary;
+        color: $ms-color-white;
+    }
+
+    .bottom {
+        height: 40px;
+        text-align: center;
+        line-height: 2.5;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $ms-color-themePrimary;
+        color: $ms-color-white;
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://xqjdn.sharepoint.com/sites/DeveloperSite",
+      "customActions": {
+        "83fa11b7-703f-4f30-8eea-c1705747870d": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message",
+            "header": "Header area of the page",
+            "footer": "Footer area of the page"
+
+          }
+        }
+      }
+    },
+    "helloAppCustomizer": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "customActions": {
+        "83fa11b7-703f-4f30-8eea-c1705747870d": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

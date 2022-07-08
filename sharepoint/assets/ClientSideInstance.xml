@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+<!--! Lsn 5.3.5 Now, make the same changes to the file that's used when the extension is deployed to all sites in the tenant in SharePoint Online. Set the Properties property to the following HTML encoded JSON string that contains the public property values: {&quot;header&quot;:&quot;Header area of the page&quot;,&quot;footer&quot;:&quot;Footer area of the page&quot;}-->
+
+    <ClientSideComponentInstance
+        Title="HelloAppCustomizer"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="83fa11b7-703f-4f30-8eea-c1705747870d"
+        
+        Properties="{&quot;header&quot;:&quot;Header are of the page&quot;,&quot;footer&quot;:&quot;Footer are for the page&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

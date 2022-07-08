@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+<!-- ! Lsn 5.3.4 This change will only update the application customizer when you are testing it. To ensure these properties are set when the component is deployed, you need to modify the element manifest file used during deployment.Set the ClientSideComponentProperties property to the following HTML encoded JSON string that contains the public property values: {&quot;header&quot;:&quot;Header area of the page&quot;,&quot;footer&quot;:&quot;Footer area of the page&quot;}-->
+    <CustomAction
+        Title="HelloAppCustomizer"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="83fa11b7-703f-4f30-8eea-c1705747870d"
+
+        ClientSideComponentProperties="{&quot;header&quot;:&quot;Header area of the page&quot;,&quot;footer&quot;:&quot;Footer area of the page&quot;}">
+    </CustomAction>
+</Elements>
